@@ -7,21 +7,22 @@ Theme Version   : 1.1
 */
 
 
-/*General Styles*/
+/* General Styles */
 
 body {
     font-size: 14px;
     line-height: 1.42857143;
     color: #333333;
     background: #f0f0f0;
-    overflow: hidden;
+    overflow-x: hidden;
+    padding-bottom: 1000px;
 }
 
 
-/*Top Style */
+/* Top Styles */
 
 #top {
-    background-color: #555555;
+    background: #555555;
     padding: 10px 0;
 }
 
@@ -34,13 +35,13 @@ body {
 }
 
 @media(max-width: 991px) {
-    top .offer {
+    #top .offer {
         margin-bottom: 10px;
     }
 }
 
 @media(max-width: 991px) {
-    top {
+    #top {
         font-size: 12px;
         text-align: center;
     }
@@ -58,7 +59,7 @@ body {
     list-style: none;
 }
 
-@media(max-width:991px) {
+@media(max-width: 991px) {
     #top ul.menu {
         text-align: center;
     }
@@ -72,14 +73,14 @@ body {
     color: #eeeeee;
 }
 
-#top ul.menu>li+li::before {
+#top ul.menu>li+li:before {
     content: "|\00a0";
     color: #f7f7f7;
-    padding: 0px 5px;
+    padding: 0 5px;
 }
 
 
-/* Header Styles*/
+/* Header Styles */
 
 .navbar {
     background: #ffffff;
@@ -119,7 +120,7 @@ body {
 .btn-primary {
     color: rgb(255, 255, 255);
     background: rgb(79, 191, 168);
-    background-color: rgb(65, 179, 156);
+    border-color: rgb(65, 179, 156);
 }
 
 #search .navbar-form {
@@ -145,7 +146,7 @@ body {
 }
 
 
-/* advantages Style*/
+/* advantages Styles */
 
 #advantages {
     text-align: center;
@@ -157,12 +158,12 @@ body {
     border: solid 1px #e6e6e6;
     box-sizing: border-box;
     padding: 20px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 3);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .3);
 }
 
 #advantages .box .icon {
     position: absolute;
-    font-size: 100px;
+    font-size: 120px;
     width: 100%;
     text-align: center;
     top: -20px;
@@ -197,7 +198,7 @@ body {
 }
 
 
-/*Latest Products Styles*/
+/* Latest Products Styles */
 
 #hot h2 {
     font-size: 36px;
@@ -205,4 +206,54 @@ body {
     color: #4fbfa8;
     text-align: center;
     text-transform: uppercase;
+}
+
+#content {
+    padding-left: 25px;
+}
+
+.single {
+    width: 290px;
+}
+
+@media(max-width:768px) {
+    .single {
+        width: 60%;
+        margin: 0 auto;
+    }
+}
+
+#content .product {
+    background: #ffffff;
+    border: solid 1px #e6e6e6;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+
+#content .product .text {
+    padding: 10px 10px 0px;
+}
+
+#content .product .text p.price {
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+}
+
+#content .product .text .button {
+    text-align: center;
+    clear: both;
+}
+
+#content .product .text .button .btn {
+    margin-bottom: 10px;
+}
+
+#content .product .text h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+#content .product .text h3 a {
+    color: rgb(85, 85, 85);
 }
